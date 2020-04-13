@@ -1,0 +1,13 @@
+{
+    "extends": "./node_modules/@cbx/common-ts/tsconfig-base.json",
+    "compilerOptions": {
+        "declarationDir": "",
+        "types": ["node"]
+    },
+    "exclude": [
+        "**/*.spec.ts",
+        "dist",
+        "node_modules",
+        "locals"
+    ]
+  }

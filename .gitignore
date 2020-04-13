@@ -1,0 +1,6 @@
+node_modules/
+pub/
+assets/
+dist/
+.tscache/
+locals/

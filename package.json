@@ -1,0 +1,23 @@
+{
+    "name": "@discord/batman",
+    "version": "0.0.1",
+    "keywords": [
+        "discord",
+        "loveletter",
+        "batman"
+    ],
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "scripts": {
+        "test": "karma start --reporters mocha",
+        "test-ci": "karma start --single-run --reporters teamcity",
+        "app-build": "rimraf dist && webpack --config .config/webpack.prod-build.js --progress --profile --bail",
+        "watch-build": "rimraf dist && webpack --config .config/webpack.prod-build.js --progress --profile --bail --watch"
+    },
+    "dependencies": {
+        "discord.js": "12.1.1"
+    },
+    "devDependencies": {
+        "@5b1/common-web": "^0.1.119"
+    }
+}
