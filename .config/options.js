@@ -1,15 +1,13 @@
 const path = require('path'),
-    root = path.resolve(__dirname, '..'),
-    lessAssetsDefault = require('@5b1/common-web').webpack.defaults.lessAssetsDefaultsFn,
-    imgAssetsDefault = require('@5b1/common-web').webpack.defaults.imgAssetsDefaultsFn;
+    root = path.resolve(__dirname, '..');
 
-const moduleName = 'fs-keyman';
+const moduleName = 'discord/batman';
 
 module.exports = {
     root,
-    assetsConfig: [lessAssetsDefault, imgAssetsDefault],
+    assetsConfig: [],
     modulesRoot: path.resolve(root, 'node_modules'),
-    htmlTemplatePathRel: 'node_modules/@5b1/cbx.core.layout/assets/html/index.html',
+    htmlTemplatePathRel: '',
     templateModuleName: `${moduleName}.templates`,
     templateStrippedPath: 'src',
     lessEntryRel: 'less/app.less',
