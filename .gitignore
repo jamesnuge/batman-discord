@@ -4,3 +4,4 @@ assets/
 dist/
 .tscache/
 locals/
+.log/

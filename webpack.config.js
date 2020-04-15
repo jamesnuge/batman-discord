@@ -4,7 +4,7 @@ const path = require('path'),
 
 module.exports = {
     entry: {
-        'main': './src/discord/bot.ts'
+        'main': './src/main.ts'
     },
     output: {
         filename: '[name].js',
