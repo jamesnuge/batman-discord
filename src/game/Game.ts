@@ -1,4 +1,5 @@
 import { State } from './State';
+import { Card } from './Card';
 
 export class Game {
 
@@ -13,9 +14,12 @@ export class Game {
         this.state = state;
     }
 
-    public takeTurn(action: string): void {
-        console.log(action);
+    public playCard(card: number, target?: string, selection?: string): void {
         this.state.turn = (this.state.turn + 1) % (this.state.players.length - 1);
     }
 
+}
+
+function isNumber(val: unknown): val is number {
+    return typeof val === 'number';
 }

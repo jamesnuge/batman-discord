@@ -1,39 +1,55 @@
 import { Card } from './Card';
 
-const BATMAN = {
+export const BATMAN = {
     name: 'Batman',
-    value: 1
+    value: 1,
+    hasTarget: true,
+    hasSelection: true
 },
     CAT_WOMAN = {
-        name: 'Catwoman',
-        value: 2
+        name: 'Cat Woman',
+        value: 2,
+        hasTarget: true,
+        hasSelection: false
     },
     BANE = {
         name: 'Bane',
-        value: 3
+        value: 3,
+        hasTarget: true,
+        hasSelection: false
     },
     ROBIN = {
         name: 'Robin',
-        value: 4
+        value: 4,
+        hasTarget: false,
+        hasSelection: false
     },
     POISON_IVY = {
         name: 'Poison Ivy',
-        value: 5
+        value: 5,
+        hasTarget: true,
+        hasSelection: false
     },
     TWO_FACE = {
         name: 'Two Face',
-        value: 6
+        value: 6,
+        hasTarget: true,
+        hasSelection: false
     },
     HARLEY_QUINN = {
         name: 'Harley Quinn',
-        value: 7
+        value: 7,
+        hasTarget: false,
+        hasSelection: false
     },
     JOKER = {
         name: 'Joker',
-        value: 8
+        value: 8,
+        hasTarget: false,
+        hasSelection: false
     };
 
-const DECK = [
+const DECK: Card[] = [
     BATMAN,
     BATMAN,
     BATMAN,
